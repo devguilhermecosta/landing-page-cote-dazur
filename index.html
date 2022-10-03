@@ -13,6 +13,59 @@
         <div class="logo1"></div>
         <div class="logo2"></div>
     </header>
-    
+
+    <!-- main -->
+    <main>
+        <section class="box-img">
+
+            <picture>
+                <source class="intro-img" media="(min-width: 800px)" srcset="./images/bg-form-g.jpg">
+                <source class="intro-img" media="(min-width: 600px)" srcset="./images/bg-form-m.jpg">
+                <img class="intro-img " src="./images/bg-form-p.jpg" alt="small image">
+            </picture>
+
+            <form class="user-form" action="#" method="get">
+
+                <!-- TEXT -->
+                <div class="form-text">
+                    <p>PODE ACREDITAR, POR DENTRO É AINDA MAIS BONITO.</p>
+                </div>
+
+                <!-- NAME -->
+                <div class="box-input">
+                    <label for="iname">*Nome completo</label>
+                    <div class="conf-input">
+                        <input type="text" name="name" id="iname" placeholder="Nome completo" required>
+                    </div>
+                </div>
+                
+                <!-- E-MAIL -->
+                <div class="box-input">
+                    <label for="iemail">*E-mail</label>
+                    <div class="conf-input">
+                        <input type="email" name="email" id="iemail" placeholder="email@email.com" required>
+                    </div>
+                </div>
+
+                <!-- PHONE -->
+                <div class="box-input">
+                    <label for="iphone">*Telefone</label>
+                    <div class="conf-input">
+                        <input type="text" name="phone" id="iphone" placeholder="(xx) xxxxx-xxxx" required>
+                    </div>
+                </div>
+
+                <!-- BUTTON SUBMIT -->
+                <div class="box-input button-input">
+                    <input type="button" value="ENVIAR">
+                </div>
+
+                <!-- INFORMATION -->
+                <div class="box-input">
+                    <p>*Campos obrigatórios</p>
+                </div>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
