@@ -3,13 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 :root {
-    --gold1: #E08300;
-    --gold2: #FF9F19;
-    --gold3: #D59C4E;
-    --violet1: #005B94;
-    --violet2: #008ae0;
-    --violet3: #45A8E6;
+    --violet0: #5B1F66;
+    --violet1: #9800B3;
+    --violet2: #C300E6;
+    --violet3: #C801ED;
+    --violet4: #DC8CEA;
     --white1: #ffffff;
+    --gold: #EEF22B;
+    --gold1: #EAD04F;
+    --gradient: linear-gradient(45deg, #9800B3, #C300E6, #C801ED, #DC8CEA, #E6D2EA);
 }
 
 * {
@@ -26,7 +28,8 @@ body, html {
     width: 100%;
     height: 150px;
     text-align: center;
-    background-color: var(--gold3);
+    /* background-color: var(--violet3); */
+    background-image: var(--gradient);
 }
 
 .logo1 {
@@ -34,7 +37,7 @@ body, html {
     width: 180px;
     height: 50px;
     margin: 20px 0 0 0;
-    background-image: url('../images/logo1.png');
+    background-image: url('../images/logo2.png');
     background-size: 80%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -45,7 +48,7 @@ body, html {
     width: 160px;
     height: 50px;
     margin: 20px 0 0 0;
-    background-image: url('../images/logo2.png');
+    background-image: url('../images/logo1.png');
     background-size: 80%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -78,9 +81,11 @@ body, html {
 
 .form-text {
     text-align: center;
+    font-weight: bolder;
     padding: 10px;
     width: 100%;
-    background-color: white;
+    background-color: var(--gold1);
+    color: var(--violet0);
 }
 
 .form-text p {
@@ -115,6 +120,7 @@ body, html {
     width: 100%;
     height: 50px;
     font-size: 20px;
+    font-weight: bolder;
     color: white;
     background-color: var(--violet2);
     outline: none;
@@ -124,7 +130,7 @@ body, html {
 }
 
 .button-input input[type="button"]:hover {
-    background-color: var(--violet1);
+    background-color: var(--violet0);
 }
 
 .center {
@@ -135,14 +141,18 @@ body, html {
     text-align: center;
     padding: 20px 0;
     width: 100%;
-    background-color: var(--violet1);
+    background-color: var(--violet0);
     font-weight: bold;
+}
+
+.call p {
+    padding: 5px;
 }
 
 .max {
     width: 100%;
     max-width: 600px;
-    color: var(--gold2);
+    color: var(--gold);
 }
 
 .f1 {
@@ -157,7 +167,7 @@ body, html {
 }
 
 .gi-p {
-    background-color: var(--violet2);
+    background-color: var(--violet3);
     color: var(--white1);
     height: 150px;
     display: flex;
@@ -181,17 +191,19 @@ body, html {
 
 footer {
     width: 100%;
-    background-color: var(--gold2);
+    background-color: var(--violet0);
     z-index: 10;
 }
 
 .ft {
-    background-color: var(--gold2);
+    background-color: var(--violet0);
+    color: var(--white1);
     text-transform: uppercase;
 }
 
 .fc {
-    background-color: var(--gold2);
+    background-color: var(--violet0);
+    color: var(--white1);
     text-decoration: underline;
     text-transform: uppercase;
     font-size: 12px;
@@ -200,7 +212,7 @@ footer {
 }
 
 .df {
-    background-color: white;
+    background-color: var(--white1);
     text-align: center;
 }
 
